@@ -1,11 +1,12 @@
-do{
     let nome
     let idade
     let motivos
     let serMisticos
     let function1
     let juntarTudo
-    let repetir
+   
+do{
+    
     
     //classe para dados
     class dadosPessoais{
@@ -124,6 +125,8 @@ do{
             ninja.escrever();
         }
     }
-
-    repetir = prompt("Deseja repetir? (sim/não)").toLowerCase();
-}while(repetir === "sim");
+    do{
+        repetir = prompt("Deseja repetir? (sim/não)").toLowerCase();
+    }while(!repetir)
+    
+}while(repetir=="sim");
