@@ -96,7 +96,7 @@ do{
     
     do {
         serMisticos = prompt(nome + " informe que ser mágico você é:\n1. Guerreiro, 2. Mago, 3. Monge, 4. Ninja");
-        serMisticos = serMisticos.charAt(0).toUpperCase() + serMisticos.slice(1);
+        serMisticos = serMisticos.charAt(0).toUpperCase() + serMisticos.slice(1).toLowerCase();
     } while (!serMisticos || !["Guerreiro", "Mago", "Monge", "Ninja"].includes(serMisticos));
     
     
@@ -125,6 +125,5 @@ do{
         }
     }
 
-    repetir=prompt("repetir:")
-    repetir=repetir.charAt(0).toUpperCase()+repetir.slice(1)
-}while(repetir==="Sim")
+    repetir = prompt("Deseja repetir? (sim/não)").toLowerCase();
+}while(repetir === "sim");
