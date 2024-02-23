@@ -1,12 +1,12 @@
+
+do{
+
     let nome
     let idade
     let motivos
     let serMisticos
     let function1
     let juntarTudo
-   
-do{
-    
     
     //classe para dados
     class dadosPessoais{
@@ -22,15 +22,7 @@ do{
     
     }
     
-    //classe para o ser mistico
-    class serMistico{
-        constructor(serMistico,nome){
-            this._serMistico=serMistico
-            this._nome=nome
-        
-        }
-    }
-    
+     //classe para mago
     class magoMagia{
         constructor(serMistico,nome,magia="magia"){
             this._serMistico=serMistico
@@ -44,6 +36,7 @@ do{
         
     }
     
+     //classe para guerreiros
     class guerreiroEspada{
         constructor(serMistico,nome,espada="espada"){
             this._serMistico=serMistico
@@ -57,6 +50,7 @@ do{
         
     }
     
+     //classe para dados monge
     class mongeArtesMarcias{
         constructor(serMistico,nome,artesMarcias="artes marcias"){
             this._serMistico=serMistico
@@ -69,7 +63,8 @@ do{
         }
         
     }
-    
+
+     //classe para ninja
     class ninjaShuriken{
         constructor(serMistico,nome,ninjaShuriken="shuriken"){
             this._serMistico=serMistico
@@ -83,6 +78,7 @@ do{
         
     }
     
+    // fazendo DO para obnrigar resposta
     do{
         nome=prompt("Informe seu nome:")
     }while(!nome);
@@ -100,7 +96,7 @@ do{
         serMisticos = serMisticos.charAt(0).toUpperCase() + serMisticos.slice(1).toLowerCase();
     } while (!serMisticos || !["Guerreiro", "Mago", "Monge", "Ninja"].includes(serMisticos));
     
-    
+    //função para o ataque
     function1 = estruturaDeDecisão(serMisticos, nome);
     
     function estruturaDeDecisão(serMistico, nome) {
